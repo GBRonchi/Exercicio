@@ -1,9 +1,118 @@
-.foto-perfil{
-    border-bottom: 100%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    border-radius: 5px;
     max-width: 200px;
     border: 1px solid black
 }
 
+/* Corpo do documento */
 body {
-    background-color: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container principal */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header-info h1 {
+    font-size: 2.5rem;
+    color: #2C3E50;
+}
+
+.profissao {
+    font-size: 1.2rem;
+    color: #7F8C8D;
+    font-style: italic;
+}
+
+.contatos {
+    font-size: 1rem;
+    color: #7F8C8D;
+}
+
+/* Seções */
+section h2 {
+    font-size: 1.8rem;
+    color: #2980B9;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #2980B9;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+/* Itens de experiência */
+.experiencia-item, .educacao-item {
+    margin-bottom: 20px;
+}
+
+.experiencia-item h3, .educacao-item h3 {
+    font-size: 1.5rem;
+    color: #34495E;
+}
+
+.empresa {
+    font-size: 1rem;
+    color: #7F8C8D;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    font-size: 1rem;
+    color: #7F8C8D;
+    margin-bottom: 5px;
+}
+
+/* Lista de habilidades */
+.habilidades ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.habilidades ul li {
+    font-size: 1rem;
+    color: #7F8C8D;
+    margin-bottom: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .header-info h1 {
+        font-size: 2rem;
+    }
+
+    .profissao {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
 }
